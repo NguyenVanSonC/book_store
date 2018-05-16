@@ -26,4 +26,7 @@ class CartsController < ApplicationController
   def cart_params
     params.require(:cart).permit :book_id, :quantity
   end
+  def test
+	puts "hello world!"
+  end
 end
